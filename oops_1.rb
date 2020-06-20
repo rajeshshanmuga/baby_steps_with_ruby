@@ -57,3 +57,23 @@ vadikaiyalar.demo_encapsulate
 
 vadikaiyalar_1 = Custoemer.new  # Inheritated from Custoemr
 vadikaiyalar_1.psudo_attr_reader
+
+# Module kinda Toolbox andit has the power creating new modules 
+puts Math::PI 
+
+module Prop
+    def pros
+        puts "It is beautiful and awesome"
+    end 
+end 
+
+class Places
+    include Prop
+    def why_
+        puts "What is the best"
+    end 
+end 
+
+chennai = Places.new 
+chennai.pros
+
