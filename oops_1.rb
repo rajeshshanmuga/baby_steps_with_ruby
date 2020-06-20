@@ -31,11 +31,17 @@ class Custoemr
     end
     def demo_encapsulate
         '''
-        It doent what is the variable it is going to provide or how it is formed, It only delivers
+        It only access the variable from the class. 
         Used for expirementing encapsulation
         '''
         puts @encapsule_var_1
     end
+end 
+
+class Custoemer < Custoemr
+    '''
+    Inheritance O*** Avalothana Just "<"
+    '''
 end 
 
 vadikaiyalar=Custoemr.new
@@ -48,3 +54,6 @@ vadikaiyalar.total_customers
 puts vadikaiyalar.psudo_attr_reader
 puts vadikaiyalar.psudo_variable
 vadikaiyalar.demo_encapsulate
+
+vadikaiyalar_1 = Custoemer.new  # Inheritated from Custoemr
+vadikaiyalar_1.psudo_attr_reader
